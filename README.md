@@ -2,7 +2,7 @@
 Wireless data collection and notification system using TWELITE
 
 ## Discription
-MONOSTICKなどが接続されたRaspberryPI等のサーバで、自宅内にある複数のTWELITEからセンサーデータを収集し記録、必要に応じてスマートフォンへのプッシュ通知を行います。
+MONOSTICKが接続されたRaspberryPI等のサーバにインストールして、自宅内にある複数のTWELITEからセンサーデータを収集し記録、必要に応じてスマートフォンへのプッシュ通知を行うPythonスクリプトです。
 現在のところ、以下のシステムに対応しています。
 
 * TWELITE PALを使った窓の開閉検知と通知
