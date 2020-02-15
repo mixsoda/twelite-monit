@@ -1,7 +1,7 @@
 # twelite-monit
 Wireless data collection and notification system using TWELITE
 
-## Discription
+## Description
 MONOSTICKが接続されたRaspberryPI等のサーバにインストールして、自宅内にある複数のTWELITEからセンサーデータを収集し記録、必要に応じてスマートフォンへのプッシュ通知を行うPythonスクリプトです。
 現在のところ、以下のシステムに対応しています。
 
@@ -9,7 +9,7 @@ MONOSTICKが接続されたRaspberryPI等のサーバにインストールして
 * タグアプリをインストールしたTWEILTEからのアナログ出力データの収集＋通知
 
 ## File List
-| File name                      | Discription                                                       |
+| File name                      | Description                                                       |
 |--------------------------------|-------------------------------------------------------------------|
 | lib/pushbullet.py              | Pushbulletを使ったプッシュ通知                                    |
 | lib/twelite_PAL_parent.py      | 子機のTWELITEから送られてきたデータのデコード                     |
