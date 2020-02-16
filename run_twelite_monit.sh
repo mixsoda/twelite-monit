@@ -15,4 +15,5 @@ if [ ${RUNNING_FLAG} -eq 0 ]; then
     echo "Remote soil moisture monitoring system started."
     echo "Process ID="$!
     echo $! > pid.txt
+    echo 'TWELITE monit started @ ' `date` >> log.txt
 fi
