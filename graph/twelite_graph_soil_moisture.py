@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 import datetime as dt
+import sys
 
 import matplotlib
 matplotlib.use('Agg')
@@ -17,8 +18,15 @@ import matplotlib.dates as mdates
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
 
+#get commandline args
+args = sys.argv
+
+if len(args) != 2 :
+    print("Usage : python twelite_graph_soil_moisture.py logfile.csv")
+    sys.exit()
+
 #read data from cvs to pandas data frame
-df_moisture = pd.read_csv('id2.csv', names=['time', 'seq', 'LQI', 'battery', 'ai1', 'ai2', 'ai3', 'ai4'])
+df_moisture = pd.read_csv('../log/'+args[1], names=['time', 'seq', 'LQI', 'battery', 'ai1', 'ai2', 'ai3', 'ai4'])
 df_moisture.time = pd.to_datetime(df_moisture.time,format='%Y-%m-%dT%H:%M:%S')
 df_moisture.time = df_moisture.time
 df_moisture = df_moisture.set_index('time')
