@@ -6,3 +6,6 @@ __pycache__/
 # C extensions
 *.so
 
+log/*.csv
+graph/*.png
+graph/*.bat
