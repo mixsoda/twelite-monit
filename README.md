@@ -8,7 +8,7 @@ MONOSTICKが接続されたRaspberryPI等のサーバにインストールして
 * TWELITE PALを使った窓の開閉検知と通知
 * タグアプリをインストールしたTWEILTEからのアナログ出力データの収集＋通知
 
-
+<img src="https://github.com/mixsoda/twelite-monit/blob/master/images/analog_sensor.JPG?raw=true" width="30%" /><img src="https://github.com/mixsoda/twelite-monit/blob/master/images/window.JPG?raw=true" width="30%" />
 
 ## File List
 | File name                      | Description                                                       |
